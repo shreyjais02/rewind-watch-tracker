@@ -829,7 +829,7 @@ const OMDB    = k => `https://www.omdbapi.com/?apikey=${OMDB_KEY}&${k}`;
 
 // Set these before deploying. Supabase's anon key is intended for browser use
 // when Row Level Security is enabled on the table.
-const SUPABASE_URL = 'https://iksemjtmnqurkasnaxcl.supabase.co/rest/v1/';
+const SUPABASE_URL = 'https://iksemjtmnqurkasnaxcl.supabase.co';
 const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imlrc2VtanRtbnF1cmthc25heGNsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODkzMjE2NzEsImV4cCI6MjEwNDg5NzY3MX0.4dG1rV3LdZ-FMH8WKZ73hdEstWZb8QPREUIh9tpu4Nc';
 const supabaseClient = SUPABASE_URL && SUPABASE_ANON_KEY && window.supabase
   ? window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY)
